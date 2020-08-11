@@ -1,0 +1,263 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#panelRow {
+  margin-top: 10px;
+}
+
+/* .sos_button {
+  width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: red;
+	position: fixed;
+	right: 10px;
+	bottom: 190px;
+	z-index: 999;
+	box-sizing: content-box;
+	display: flex;
+	align-items: center;
+	margin: auto;
+	color: #fff;
+	padding: 1px;
+	font-size: 15px;
+	cursor: pointer;
+} */
+
+.sos_button {
+  width: 200px;
+  background-color: #dc3545 !important;
+}
+
+.navbar {
+  background-color: #0390E9 !important;
+  width: 100%;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, .15);
+  transition: all .3s cubic-bezier(.25, .8, .25, 1);
+  display: flex;
+  height: 90px !important;
+  z-index: 9999;
+}
+
+.navbar-brand {
+  position: relative;
+  left: 2%;
+  text-transform: uppercase;
+  color: #fff !important;
+}
+
+.left-div {
+  float: left;
+}
+.left-div a {
+  margin-left: -40px;
+}
+
+.right-div {
+  float: right;
+}
+
+.action-buttons {
+  width: 100px;
+  background-color: #0390E9;
+  margin-right: 20px;
+}
+
+#sideBar {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 260px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 90px; /* Stay at the top */
+  left: 0;
+  background-color: #f7f7f7; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  #sideBar{
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  #closeBtn{
+    display: none;
+  }
+
+  #applyBtn {
+    display: none;
+  }
+  #filter-icon {
+    display: none;
+  }
+}
+
+.f1, .f2 {
+  padding: 20px;
+}
+
+.toggle{
+  margin: 0px;
+  /* float: right;
+  margin: 20px;
+  background-color: #0390E9;
+  border: none;
+  outline: none;
+  color: #fff; */
+}
+
+.view {
+  margin-top: 20px;
+  /*height: 65vh;*/
+  /*overflow: auto;*/
+  width: 100%;
+  float: left;
+
+}
+
+#panelRow {
+    width: 98%;
+  }
+
+.popup-content {
+  width: 40% !important;
+  background: #fff !important;
+  border-radius: 10px !important;
+  height: auto !important;
+  max-height: 90vh !important;
+  overflow: auto !important;
+  padding: 30px 15px 30px 15px !important;
+}
+
+/* form {
+  display: block;
+  font-size: 19px;
+  color: #fff;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 70px;
+} */
+
+.form_title {
+  text-align: center;
+  font-size: 19px;
+  display: block;
+  color: #0390E9;
+  font-weight: 600;
+  line-height: 1.2px;
+  padding-bottom: 20px;
+}
+
+.mui-btn {
+  background-color: #0390E9;
+  color: white;
+}
+
+.filterOptions {
+  margin: auto;
+  width: 80%;
+  display: flex;
+}
+
+/* .mui-textfield>input, .mui--text-placeholder, .mui-select>select.mui--text-placeholder, .mui-textfield>input.mui--text-placeholder {
+  color: #fff !important;
+}
+
+.mui-textfield>input, .mui-textfield>textarea, .mui--is-untouched, .mui--is-pristine, .mui--is-empty {
+  color: #fff !important;
+} */
+
+.ab-header {
+    padding: 10px;
+    color: #0390E9;
+    font-weight: 500;
+    font-size: 22px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .15);
+    transition: all .3s cubic-bezier(.25, .8, .25, 1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 100;
+    background-color: #fff;
+}
+
+#filter-icon {
+  font-size: 32px;
+  color: #0390E9;
+  text-align: right;
+  float: right;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.navigators {
+  display: inline-block;
+}
+
+.navigator-block {
+  align-items: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  .view {
+    height: auto;
+    margin-top: 10px;
+    width: 100%;
+    margin: auto;
+  }
+
+  #sideBar {
+    width: 100%;
+}
+#panelRow {
+  width: 100%;
+  margin: auto;
+}
+
+}
